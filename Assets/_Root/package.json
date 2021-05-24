@@ -8,6 +8,5 @@
     "name": "Google LLC"
   },
   "dependencies": {
-    "com.google.android.appbundle": "https://github.com/Gamee-Studio/android-app-bundle.git?path=Assets/_Root#v1.3.0"
   }
 }
