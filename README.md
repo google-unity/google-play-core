@@ -3,9 +3,9 @@
 ### Install by add directly in `manifest.json` in folder `Packages/manifest.json`
 
 
-for veresion `1.8.0`
+for veresion `1.8.1`
 ```cs
-"com.google.play.core": "https://github.com/google-unity/google-play-core.git#1.8.0",
+"com.google.play.core": "https://github.com/google-unity/google-play-core.git#1.8.1",
 ```
 
 
