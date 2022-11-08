@@ -1,16 +1,5 @@
 # Changelog for com.google.play.core
 
-## [1.8.0] - 2022-07-06
-### New Features
-- Migrated to [Core-Common 2.0.0](https://developer.android.com/reference/com/google/android/play/core/release-notes-common#2-0-0).
-## [1.7.0] - 2022-02-15
-### New Features
-- Incremented version number to match other packages
-
-## [1.6.1] - 2022-1-20
-### New Features
- - Updated Java Play Core dependency from 1.10.2 to 1.10.3
-
 ## [1.6.0] - 2021-11-15
 ### New Features
  - Updated Java Play Core dependency from 1.10.0 to 1.10.2

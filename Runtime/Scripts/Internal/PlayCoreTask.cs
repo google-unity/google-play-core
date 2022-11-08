@@ -18,18 +18,18 @@ using UnityEngine;
 namespace Google.Play.Core.Internal
 {
     /// <summary>
-    /// Wraps Play Services Task which represent asynchronous operations.
+    /// Wraps Play Core's Task which represent asynchronous operations.
     /// Allows C# classes to register callbacks for when a task succeeds or fails.
     /// </summary>
     /// <typeparam name="TAndroidJava">
-    /// The type of the object that the underlying Play Services Task will provide, once it completes.
+    /// The type of the object that the underlying Play Core Task will provide, once it completes.
     /// Must be a primitive type (e.g. bool, int, or float) or an AndroidJavaObject.
     /// </typeparam>
-    public class PlayServicesTask<TAndroidJava> : IDisposable
+    public class PlayCoreTask<TAndroidJava> : IDisposable
     {
         private readonly AndroidJavaObject _javaTask;
 
-        public PlayServicesTask(AndroidJavaObject javaTask)
+        public PlayCoreTask(AndroidJavaObject javaTask)
         {
             if (javaTask == null)
             {
@@ -40,29 +40,29 @@ namespace Google.Play.Core.Internal
         }
 
         /// <summary>
-        /// Register a callback that will fire when the underlying Play Services Task succeeds.
+        /// Register a callback that will fire when the underlying Play Core Task succeeds.
         /// </summary>
         /// <param name="onSuccess">
-        /// The action that will be invoked with the result of the underlying Play Services Task.
+        /// The action that will be invoked with the result of the underlying Play Core Task.
         /// </param>
         public void RegisterOnSuccessCallback(Action<TAndroidJava> onSuccess)
         {
-            var listenerProxy = new TaskOnSuccessListener<TAndroidJava>();
+            var listenerProxy = new PlayCoreOnSuccessListener<TAndroidJava>();
             listenerProxy.OnTaskSucceeded += onSuccess;
             AddOnSuccessListener(listenerProxy);
         }
 
         /// <summary>
-        /// Register a callback that will fire when the underlying Play Services Task fails.
+        /// Register a callback that will fire when the underlying Play Core Task fails.
         /// </summary>
         /// <param name="onFailure">
-        /// The action that will be invoked when the underlying Play Services Task fails.
+        /// The action that will be invoked when the underlying Play Core Task fails.
         /// The action will be passed a human-readable string describing the exception which caused the failure,
         /// along with a corresponding error code.
         /// </param>
         public void RegisterOnFailureCallback(Action<string, int> onFailure)
         {
-            var listenerProxy = new TaskOnFailureListener();
+            var listenerProxy = new PlayCoreOnFailureListener();
             listenerProxy.OnTaskFailed += onFailure;
             AddOnFailureListener(listenerProxy);
         }
