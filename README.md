@@ -3,14 +3,14 @@
 ### Install by add directly in `manifest.json` in folder `Packages/manifest.json`
 
 
-for veresion `1.6.0`
+for veresion `1.7.0`
 ```cs
-"com.google.play.core": "https://github.com/google-unity/google-play-core.git#1.6.0",
+"com.google.play.core": "https://github.com/google-unity/google-play-core.git#1.7.0",
 ```
 
 
-dependency `google.play.core 1.6.0`, `external-dependency-manager 1.2.166`
+dependency `google.play.core 1.7.0`, `external-dependency-manager 1.2.169`
 ```csharp
-"com.google.android.appbundle": "https://github.com/google-unity/android-app-bundle.git#1.6.0",
-"com.google.external-dependency-manager": "https://github.com/google-unity/external-dependency-manager.git#1.2.166",
+"com.google.android.appbundle": "https://github.com/google-unity/android-app-bundle.git#1.7.0",
+"com.google.external-dependency-manager": "https://github.com/google-unity/external-dependency-manager.git#1.2.169",
 ```
