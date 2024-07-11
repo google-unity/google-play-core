@@ -22,6 +22,7 @@ namespace Google.Play.Core.Internal
         public const string PlayCorePackagePrefix = "com.google.android.play.core.";
         public const string GmsCorePackagePrefix = "com.google.android.gms.";
         public const string AssetPackPackagePrefix = PlayCorePackagePrefix + "assetpacks.";
+        public const string IntegrityPackagePrefix = PlayCorePackagePrefix + "integrity.";
         public const int InternalErrorCode = -100;
     }
 }

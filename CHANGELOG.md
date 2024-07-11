@@ -1,5 +1,12 @@
 # Changelog for com.google.play.core
 
+## [1.8.4] - 2024-07-05
+- Bumped the Core-common Java maven dependency to 2.0.4 to benefit from a number of bug fixes
+- Bumped minimum supported Unity version to 2018.4
+
+## [1.8.3] - 2024-01-12
+- Added integrity prefix constant
+
 ## [1.8.2] - 2023-03-10
 - Updated Android App Bundle dependency from 1.8.0 to 1.9.0
 
@@ -58,4 +65,3 @@
 ### New Features
  - Initial release
  - Includes playcore.aar version 1.7.1
-
